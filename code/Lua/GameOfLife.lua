@@ -1,7 +1,7 @@
 -- To execute: lua GameOfLife.lua
--- [[ Input: {{0, 1, 0},{0, 0, 1},{1, 1, 1},{0, 0, 0}}
-      Expected Output: {{0,0,0},{1,0,1},{0,1,1},{0,1,0}}
---]]
+-- Input: {{0, 1, 0},{0, 0, 1},{1, 1, 1},{0, 0, 0}}
+-- Expected Output: {{0,0,0},{1,0,1},{0,1,1},{0,1,0}}
+
 		
 function gameoflife(board)
     board_copy = {}
