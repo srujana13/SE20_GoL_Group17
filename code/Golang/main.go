@@ -1,3 +1,19 @@
+/*Input:
+[
+[0,1,0],
+[0,0,1],
+[1,1,1],
+[0,0,0]
+]
+Output:
+[
+[0,0,0],
+[1,0,1],
+[0,1,1],
+[0,1,0]
+]
+*/
+
 package main
 
 import "fmt"
@@ -76,4 +92,31 @@ func main() {
 	gameOfLife(board)
 	fmt.Println("Final State ")
 	fmt.Println(board)
+
+	fmt.Println("test case for the input {{0, 1, 0}, {0, 0, 1}, {1, 1, 1}, {0, 0, 0}}")
+	board_for_testing := [][]int{{0, 1, 0}, {0, 0, 1}, {1, 1, 1}, {0, 0, 0}}
+	test(board_for_testing)
+}
+func test(board_for_testing [][]int) {
+
+	expected_output := [][]int{{0, 0, 0}, {1, 0, 1}, {0, 1, 1}, {0, 1, 0}}
+	gameOfLife(board_for_testing)
+	result := true
+
+	for i := 0; i < len(board_for_testing); i++ {
+		for j := 0; j < len(board_for_testing[i]); j++ {
+
+			if board_for_testing[i][j] != expected_output[i][j] {
+				result = false
+			}
+
+		}
+
+	}
+	if result == true {
+		fmt.Print("Test Case passed")
+	} else {
+		fmt.Println("Test case failed")
+	}
+
 }
