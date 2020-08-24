@@ -1,6 +1,6 @@
 def game_of_life(board)
-  board_copy = board
-  board_copy.each_with_index do |row, i|
+  board_copy = Marshal.load(Marshal.dump(board))
+  board_copy.each_with_index do |row,i|
     row.each_with_index do |col, j|
       total_alive_neighbour = neighbour(board_copy, i + 1, j) +
                               neighbour(board_copy, i - 1, j) +
@@ -59,6 +59,6 @@ puts('Final State')
 puts(board.map { |x| x.join(' ') })
 # Generated Output for the given board
 # 0 0 0
-# 0 0 1
+# 1 0 1
 # 0 1 1
-# 0 0 0
+# 0 1 0
