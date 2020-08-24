@@ -27,8 +27,7 @@ Update .replit with the following
 `language = "Lua"` <br/>
 
 `run = "lua ./code/Lua/GameOfLife.lua"`<br/>
-
-`click on 'run' to execute it`
+click on 'run' to execute it
 
 ##### For Golang
 
@@ -38,7 +37,7 @@ Update .replit with the following
 
 `run = "go run ./code/Golang/main.go"`<br/>
 
-`click on 'run' to execute it`
+click on 'run' to execute it
 
 ##### For Ruby
 
@@ -48,4 +47,4 @@ Update .replit with the following
 
 `run = "ruby ./code/Ruby/gol.rb"`<br/>
 
-`click on 'run' to execute it`
+click on 'run' to execute it
