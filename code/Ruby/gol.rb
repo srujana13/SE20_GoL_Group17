@@ -31,6 +31,7 @@ def game_of_life(board)
       end
     end
   end
+  return board
 end
 
 def neighbour(board_copy, i, j)
@@ -38,6 +39,15 @@ def neighbour(board_copy, i, j)
               (j >= board_copy[0].length)
   return 1 if board_copy[i][j] == 1
   0
+end
+
+def test(final_board)
+  expected_output = [[0,0,0],[1,0,1],[0,1,1],[0,1,0]]
+  if expected_output == final_board
+    puts("Test Passed!")
+  else
+    puts("Test Failed!")
+  end
 end
 
 puts('Game of Life')
@@ -53,12 +63,14 @@ puts(board.map { |x| x.join(' ') })
 # 1 1 1
 # 0 0 0
 
-game_of_life(board)
-
+final_board = game_of_life(board)
 puts('Final State')
-puts(board.map { |x| x.join(' ') })
-# Generated Output for the given board
+puts(final_board.map { |x| x.join(' ') })
+# Expected Output for the given board
 # 0 0 0
 # 1 0 1
 # 0 1 1
 # 0 1 0
+
+# The following test can be used to check if the code is working as expected or not
+test(final_board)
