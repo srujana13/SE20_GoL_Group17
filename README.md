@@ -21,18 +21,25 @@ Tanay Agarwal
 
 Click on the repl.it icon on readme.md
 ##### For Lua
+
 Update .replit with the following
 
-`language = "Lua" 
-run = "lua ./code/Lua/GameOfLife.lua"
-click on 'run' to execute it`
+`language = "Lua"` 
+`run = "lua ./code/Lua/GameOfLife.lua"`
+`click on 'run' to execute it`
 
 ##### For Golang
-`language = "Go" 
-run = "go run ./code/Golang/main.go"
-click on 'run' to execute it`
+
+Update .replit with the following
+
+`language = "Go"`
+`run = "go run ./code/Golang/main.go"`
+`click on 'run' to execute it`
 
 ##### For Ruby
-`language = "Ruby"
-run = "ruby ./code/Ruby/gol.rb"
-click on 'run' to execute it`
+
+Update .replit with the following
+
+`language = "Ruby"`
+`run = "ruby ./code/Ruby/gol.rb"`
+`click on 'run' to execute it`
