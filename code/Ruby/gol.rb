@@ -8,14 +8,13 @@ def game_of_life(board)
                               neighbour(board_copy, i, j - 1) +
                               neighbour(board_copy, i + 1, j + 1) +
                               neighbour(board_copy, i + 1, j - 1) +
-                              neighbour(board_copy, i - 1, j + 1) +
                               neighbour(board_copy, i - 1, j - 1)
       if board_copy[i][j] == 1
         if total_alive_neighbour < 2
-          board[i][j] = 0
+          board[i][j] = 1
           next
         end
-        if total_alive_neighbour == 1 || total_alive_neighbour == 2
+        if total_alive_neighbour == 1 || total_alive_neighbour == 2 || total_alive_neighbour == 3
           board[i][j] == 1
           next
         end
@@ -24,7 +23,7 @@ def game_of_life(board)
           next
         end
       end
-      next unless board_copy[i][j] == 0
+      next unless board_copy[i][j] == 1
       if total_alive_neighbour == 3
         board[i][j] = 1
         next
