@@ -1,5 +1,8 @@
 -- To execute: lua GameOfLife.lua
+-- Input: {{0, 1, 0},{0, 0, 1},{1, 1, 1},{0, 0, 0}}
+-- Expected Output: {{0,0,0},{1,0,1},{0,1,1},{0,1,0}}
 
+		
 function gameoflife(board)
     board_copy = {}
     for i = 1, #board  do
@@ -18,14 +21,14 @@ function gameoflife(board)
         if board_copy[i][j] == 0 then
           if n_count == 2 or n_count == 3 then
             board[i][j] = 1
-				  else 
-					  board[i][j] = 0
-				  end
-			  else
-				  if n_count == 3 then
-					  board[i][j] = 1
-					end
-				end
+          else 
+	    board[i][j] = 0
+          end
+        else
+	  if n_count == 3 then
+            board[i][j] = 1
+          end
+        end
       end
     end
   return board
@@ -40,7 +43,7 @@ function check(a, rows, cols)
 end
 
 function test(final_board)
-  output = {{0,0,0},{1,0,1}, {0,1,1},{0,1,0}}
+  output = {{0,0,0},{1,0,1},{0,1,1},{0,1,0}}
   testcase_check = 1
   for i = 1, #final_board  do
     for j = 1, #final_board[1] do
