@@ -4,16 +4,16 @@ matrix:
         go:
           - 1.x
         script:
-          - go build Golang/main.go
+          - go build code/Golang/main.go
       
       - language: ruby 
         rvm:
           - 2.5.0 
         script:
-          - ruby Ruby/gol.rb
+          - ruby code/Ruby/gol.rb
       
       - language: c 
         before_install:
           - sudo apt-get install -y lua5.2
         script:
-          - lua Lua/GameOfLife.lua
+          - lua code/Lua/GameOfLife.lua
