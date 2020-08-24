@@ -24,22 +24,28 @@ Click on the repl.it icon on readme.md
 
 Update .replit with the following
 
-`language = "Lua"` 
-`run = "lua ./code/Lua/GameOfLife.lua"`
+`language = "Lua"` <br/>
+
+`run = "lua ./code/Lua/GameOfLife.lua"`<br/>
+
 `click on 'run' to execute it`
 
 ##### For Golang
 
 Update .replit with the following
 
-`language = "Go"`
-`run = "go run ./code/Golang/main.go"`
+`language = "Go"`<br/>
+
+`run = "go run ./code/Golang/main.go"`<br/>
+
 `click on 'run' to execute it`
 
 ##### For Ruby
 
 Update .replit with the following
 
-`language = "Ruby"`
-`run = "ruby ./code/Ruby/gol.rb"`
+`language = "Ruby"`<br/>
+
+`run = "ruby ./code/Ruby/gol.rb"`<br/>
+
 `click on 'run' to execute it`
