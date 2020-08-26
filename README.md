@@ -16,7 +16,7 @@ Sreeraksha Mavinhally Sreekantha
 Srujana Rachakonda  
 Tanay Agarwal
 
-The experiment session expect the Participants to Debug Game of Life Problem in three languages within 30 minutes time. A participant is expected to debug the provided code in the presence of a Mentor from Group 17 and the participant is expected to share their screen when debugging the code. After completing the debug session the participant needs to complete a simple survey. 
+The experiment session expects Participants to Debug Game of Life Problem in three languages within 30 minutes time. A participant is expected to debug the provided code in the presence of a Mentor from Group 17 and the participant is expected to share their screen when debugging the code. After completing the debug session the participant needs to complete a simple survey. This debugging experiment is conducted on atleast 10 participants.
 #### Steps to run the program 
 
 Click on the repl.it icon on readme.md
